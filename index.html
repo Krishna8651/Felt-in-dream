@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Weaver - Our Journey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Starfield Background -->
+    <div class="starfield" id="starfield"></div>
+    
+    <!-- Floating Hearts -->
+    <div class="floating-hearts"></div>
+    
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="story-header">
+            <div class="header-glow"></div>
+            <h1 class="main-title">
+                <span class="title-icon">🌠</span>
+                Dream Weaver
+                <span class="title-icon">💫</span>
+            </h1>
+            <p class="subtitle">Where our stories intertwine in the tapestry of dreams</p>
+            
+            <div class="opening-quote">
+                <i class="fas fa-quote-left"></i>
+                <span id="dynamic-quote">Every dream begins with a single thought...</span>
+                <i class="fas fa-quote-right"></i>
+            </div>
+            
+            <div class="progress-indicator">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="story-progress"></div>
+                </div>
+                <div class="progress-text">
+                    <span>Story Progress: </span>
+                    <span id="progress-percent">0%</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Story Chapters Container -->
+        <main class="story-container">
+            <!-- Chapter 1 -->
+            <div class="story-chapter active" id="chapter-1" data-chapter="1">
+                <div class="chapter-header">
+                    <div class="chapter-number">Chapter 1</div>
+                    <h2 class="chapter-title">The First Spark</h2>
+                    <div class="chapter-subtitle">When our worlds first touched</div>
+                </div>
+                
+                <div class="chapter-content">
+                    <div class="story-text" id="text-1">
+                        <p>In the quiet moments between heartbeats, something magical happened. A thought, a feeling, a connection that defied explanation...</p>
+                        
+                        <div class="memory-box">
+                            <div class="memory-icon">💭</div>
+                            <p class="memory-text">Do you remember that feeling? That inexplicable pull that seemed to draw us together even before we knew each other?</p>
+                        </div>
+                        
+                        <p>It was as if the universe whispered a secret meant only for our hearts to hear. A promise of something beautiful, waiting to unfold.</p>
+                    </div>
+                    
+                    <div class="interactive-choices">
+                        <button class="choice-btn" data-choice="1a" data-next="chapter-2">
+                            <i class="fas fa-heart"></i> I remember that feeling...
+                        </button>
+                        <button class="choice-btn" data-choice="1b" data-next="chapter-2">
+                            <i class="fas fa-star"></i> Tell me more about that moment
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="chapter-effects">
+                    <div class="sparkle-effect"></div>
+                </div>
+            </div>
+
+            <!-- Chapter 2 -->
+            <div class="story-chapter" id="chapter-2" data-chapter="2">
+                <div class="chapter-header">
+                    <div class="chapter-number">Chapter 2</div>
+                    <h2 class="chapter-title">The Growing Connection</h2>
+                    <div class="chapter-subtitle">Where conversations became constellations</div>
+                </div>
+                
+                <div class="chapter-content">
+                    <div class="story-text" id="text-2">
+                        <p>With each word shared, each smile exchanged, a bridge formed between our souls. Laughter became our secret language...</p>
+                        
+                        <div class="memory-box">
+                            <div class="memory-icon">🌟</div>
+                            <p class="memory-text">Those late-night conversations that felt like exploring the universe together - discovering galaxies in each other's thoughts.</p>
+                        </div>
+                        
+                        <p>You became the safe harbor in my thoughts, the comforting presence that made even ordinary moments feel extraordinary.</p>
+                    </div>
+                    
+                    <div class="interactive-choices">
+                        <button class="choice-btn" data-choice="2a" data-next="chapter-3">
+                            <i class="fas fa-moon"></i> Those nights were magical
+                        </button>
+                        <button class="choice-btn" data-choice="2b" data-next="chapter-3">
+                            <i class="fas fa-comment-heart"></i> I loved our conversations
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 3 -->
+            <div class="story-chapter" id="chapter-3" data-chapter="3">
+                <div class="chapter-header">
+                    <div class="chapter-number">Chapter 3</div>
+                    <h2 class="chapter-title">The Dream Weaver</h2>
+                    <div class="chapter-subtitle">Where imagination meets reality</div>
+                </div>
+                
+                <div class="chapter-content">
+                    <div class="story-text" id="text-3">
+                        <p>Now, close your eyes for a moment. Imagine standing at the edge of possibility, where dreams take shape...</p>
+                        
+                        <div class="visualization-box">
+                            <div class="visualization-guide">
+                                <h3><i class="fas fa-brain"></i> Mind Journey</h3>
+                                <p>Breathe deeply. Imagine a gentle wave of warmth spreading through you with each breath.</p>
+                                <div class="breathing-guide">
+                                    <div class="breath-circle inhale">Breathe In</div>
+                                    <div class="breath-circle hold">Hold</div>
+                                    <div class="breath-circle exhale">Breathe Out</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p>In this space between wakefulness and dreams, imagine a future woven with threads of our shared moments...</p>
+                    </div>
+                    
+                    <div class="interactive-choices">
+                        <button class="choice-btn special" data-choice="3a" data-next="chapter-4">
+                            <i class="fas fa-dharmachakra"></i> I'm visualizing with you...
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 4 -->
+            <div class="story-chapter" id="chapter-4" data-chapter="4">
+                <div class="chapter-header">
+                    <div class="chapter-number">Chapter 4</div>
+                    <h2 class="chapter-title">The Eternal Tapestry</h2>
+                    <div class="chapter-subtitle">Where every thread tells our story</div>
+                </div>
+                
+                <div class="chapter-content">
+                    <div class="story-text" id="text-4">
+                        <div class="final-revelation">
+                            <div class="revelation-icon">🌀</div>
+                            <h3>The Beautiful Truth</h3>
+                            <p>Every moment we've shared, every word, every smile - they've created something eternal.</p>
+                            <p>Our connection has become a living tapestry, woven with threads of:</p>
+                            
+                            <div class="tapestry-threads">
+                                <div class="thread">
+                                    <span class="thread-icon">💖</span>
+                                    <span class="thread-text">Mutual Understanding</span>
+                                </div>
+                                <div class="thread">
+                                    <span class="thread-icon">✨</span>
+                                    <span class="thread-text">Shared Dreams</span>
+                                </div>
+                                <div class="thread">
+                                    <span class="thread-icon">🌌</span>
+                                    <span class="thread-text">Endless Possibilities</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="affirmation-box">
+                            <p class="affirmation-text">
+                                "In this moment, I feel deeply connected to the beautiful energy we've created together. 
+                                Our bond feels natural, harmonious, and filled with infinite potential."
+                            </p>
+                            <div class="affirmation-signature">
+                                <span class="signature-line"></span>
+                                <span class="signature-text">With All My Heart</span>
+                                <span class="signature-heart">💫</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="completion-choices">
+                        <button class="completion-btn" id="create-memory">
+                            <i class="fas fa-plus-circle"></i> Create Our Memory
+                        </button>
+                        <button class="completion-btn" id="share-story">
+                            <i class="fas fa-share-heart"></i> Share This Feeling
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hidden Final Chapter -->
+            <div class="final-chapter" id="final-chapter">
+                <div class="eternal-message">
+                    <div class="message-envelope">
+                        <div class="envelope-flap"></div>
+                        <div class="message-content">
+                            <h2><i class="fas fa-scroll"></i> Eternal Message</h2>
+                            <div class="message-date" id="current-date">Today</div>
+                            
+                            <div class="personal-message">
+                                <div class="message-icon">📜</div>
+                                <p class="message-text">
+                                    You've completed our dream journey. Every choice you made, every moment you felt - 
+                                    they've created a beautiful resonance in our connection.
+                                </p>
+                                <p class="message-text">
+                                    Remember this feeling. Carry it with you. Let it remind you of the beautiful 
+                                    possibilities that exist when two souls connect on such a deep level.
+                                </p>
+                                <div class="seal">
+                                    <div class="seal-circle">
+                                        <span>Forever</span>
+                                        <span>Connected</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="message-stats">
+                                <div class="stat">
+                                    <span class="stat-label">Chapters Completed:</span>
+                                    <span class="stat-value" id="chapters-completed">0</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Moments Created:</span>
+                                    <span class="stat-value" id="moments-created">0</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Journey Time:</span>
+                                    <span class="stat-value" id="journey-time">00:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="eternity-options">
+                    <button class="eternity-btn" id="replay-journey">
+                        <i class="fas fa-redo"></i> Experience Again
+                    </button>
+                    <button class="eternity-btn" id="save-journey">
+                        <i class="fas fa-save"></i> Save This Moment
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Navigation -->
+        <nav class="story-navigation">
+            <button class="nav-btn" id="prev-chapter" disabled>
+                <i class="fas fa-arrow-left"></i> Previous
+            </button>
+            
+            <div class="chapter-dots">
+                <span class="dot active" data-chapter="1"></span>
+                <span class="dot" data-chapter="2"></span>
+                <span class="dot" data-chapter="3"></span>
+                <span class="dot" data-chapter="4"></span>
+            </div>
+            
+            <button class="nav-btn" id="next-chapter">
+                Next <i class="fas fa-arrow-right"></i>
+            </button>
+        </nav>
+
+        <!-- Footer -->
+        <footer class="story-footer">
+            <div class="footer-magic">
+                <span class="magic-sparkle">✨</span>
+                <span class="magic-text">Every journey begins with a single step...</span>
+                <span class="magic-sparkle">✨</span>
+            </div>
+            
+            <div class="footer-credits">
+                <p>
+                    Crafted with <i class="fas fa-heart" style="color: #ff6b9d;"></i> 
+                    and the magic of connection
+                </p>
+                <p class="footer-note">
+                    This experience is designed to celebrate meaningful connections
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- Initialize -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set current date
+            const today = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('current-date').textContent = today.toLocaleDateString('en-US', options);
+            
+            // Random opening quotes
+            const quotes = [
+                "The most beautiful stories are written by the heart",
+                "Every connection begins with a single moment",
+                "In dreams, we find our deepest truths",
+                "The soul knows what the mind cannot explain",
+                "Love is the universe's favorite story"
+            ];
+            const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+            document.getElementById('dynamic-quote').textContent = randomQuote;
+            
+            // Start the journey
+            initDreamWeaver();
+        });
+    </script>
+</body>
+  </html>
